@@ -1,0 +1,272 @@
+/* App.css */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f2f5;
+}
+
+.booking-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+} */
+
+/* .input-field {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.slot-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.slot-button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #1976d2;
+  background-color: #e3f2fd;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.slot-button:hover {
+  background-color: #bbdefb;
+}
+
+.slot-button.selected {
+  background-color: #1976d2;
+  color: white;
+}
+
+.slot-button.booked {
+  background-color: #ddd;
+  color: gray;
+  cursor: not-allowed;
+  border: 1px solid #aaa;
+}
+
+.book-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-button:hover {
+  background-color: #388e3c;
+}
+
+.confirmation {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+ */
+/* Full screen layout */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Main container */
+.container {
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #fff;
+  background-color: #00796b;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+h2 {
+  margin-top: 1rem;
+  color: #333;
+}
+
+h3 {
+  margin-top: 2rem;
+  color: #444;
+}
+
+/* Marquee (sliding text) */
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 1rem;
+}
+
+.marquee {
+  white-space: nowrap;
+  display: inline-block;
+  animation: scroll-left 12s linear infinite;
+  color: #444;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Form layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 1rem;
+}
+
+input, select {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Book button */
+.book-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #004d40;
+}
+
+/* Slots section */
+.slot-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 1000px;
+  margin-top: 1rem;
+}
+
+.slot-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background-color: #e0f2f1;
+  border: 1px solid #00796b;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slot-btn:hover {
+  background-color: #00796b;
+  color: white;
+}
+
+.slot-btn.booked {
+  background-color: #ffcdd2;
+  color: #b71c1c;
+  border-color: #e57373;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  background-color: #00796b;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.footer div {
+  flex: 1 1 200px;
+  margin: 0.5rem 0;
+}
+.date-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 1rem;
+}
+
+.date-header h2 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.date-input {
+  width: 200px;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.slot-btn.selected {
+  background-color: #00796b; 
+  color: white;
+  font-weight: bold;
+  border: 2px solid #00796b;
+}
